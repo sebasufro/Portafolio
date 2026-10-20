@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Your Name — selected projects built with TypeScript, Vite and modern web tech."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>Your Name — Portfolio</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to projects</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <!-- Replace with your initials or name -->
+        <a class="brand" href="#top">SY<span class="brand__dot">.</span></a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="#projects">Proyectos</a>
+          <a href="#about">Sobre mí</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <p class="hero__eyebrow">Desarrollador FullStack</p>
+        <!-- Replace "Your Name" with your name -->
+        <h1 class="hero__title">Sebastián Yáñez Sáez</h1>
+        <p class="hero__subtitle">
+          Puedo construir soluciones tanto para Frontend y Backend,
+          En la sección de proyectos se pueden encontrar con algunos proyectos completados.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#projects">Ver Proyectos</a>
+          <!-- Coloca tu CV en public/CV.pdf para que este enlace funcione -->
+          <a
+            class="button button--ghost"
+            href="./CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Descargar CV</a>
+        </div>
+      </section>
+
+      <section id="about" class="section container" aria-labelledby="about-title">
+        <div class="section__header">
+          <h2 id="about-title">Sobre mí</h2>
+        </div>
+        <p class="section__lead">
+          Soy estudiante de 5to año en la Universidad de la Frontera de Chile,
+          Interesado en el desarrollo fullstack y en análisis de datos,
+          con conocimiento en distintos lenguajes y frameroks tales como:
+          <br/>
+          Lenguajes: Python, Typescript, Java, C# y Kotlin
+          <br/>
+          Frameworks: NextJS, NodeJS, Vue, Vite, Flutter, SpringBoot
+          <br/>
+          Herramientas: Figma, PostgreSQL, MySQL, SQLite, Github, Gitlab
+        </p>
+      </section>
+
+      <section id="projects" class="section container" aria-labelledby="projects-title">
+        <div class="section__header">
+          <h2 id="projects-title">Proyectos</h2>
+        </div>
+        <div class="project-toolbar">
+          <label class="search-field">
+            <span class="visually-hidden">Buscar Proyectos</span>
+            <input
+              id="project-search"
+              type="search"
+              placeholder="Buscar"
+              autocomplete="off"
+            />
+          </label>
+          <div id="tag-filters" class="tag-filters" role="group" aria-label="Filter projects by tag"></div>
+        </div>
+        <p id="project-count" class="project-count" aria-live="polite"></p>
+        <ul id="project-list" class="project-list"></ul>
+        <p id="no-projects" class="empty-state" hidden>No projects match your filters.</p>
+      </section>
+
+      <section id="contact" class="section container" aria-labelledby="contact-title">
+        <div class="section__header">
+          <h2 id="contact-title">Contacto</h2>
+        </div>
+        <p class="section__lead">
+          Contactame por email: 
+          <a href="mailto:sebastian2003.saez@gmail.com">sebastian2003.saez@gmail.com</a>.
+          <br/>
+          Mi perfil de Github:
+          <a href="https://github.com/sebasufro">Sebasufro</a>
+          <br/>
+          Mi perfil de Linkedin: 
+          <a href="https://www.linkedin.com/in/sebastian-ya%C3%B1ez-41904939b/">Sebastián Yáñez</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="year">2026</span> Sebastián Yáñez · Hecho con Vite + TypeScript</p>
+        <nav class="footer-nav" aria-label="Social">
+          <a href="https://github.com/sebasufro" rel="me noopener noreferrer" target="_blank">GitHub</a>
+          <!--
+          <a href="https://www.linkedin.com/in/sebastian-ya%C3%B1ez-41904939b/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
+          -->
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
