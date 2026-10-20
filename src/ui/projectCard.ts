@@ -2,9 +2,9 @@ import type { Project, ProjectLink, ProjectStatus } from "../types/project";
 import { createElement } from "../utils/dom";
 
 const STATUS_LABELS: Record<ProjectStatus, string> = {
-  completed: "Completed",
-  "in-progress": "In progress",
-  archived: "Archived",
+  completado: "Completado",
+  "en-progreso": "En progreso",
+  archivado: "Archivado",
 };
 
 /** Builds a single project card (<li>) from a typed project entry. */

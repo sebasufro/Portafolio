@@ -1,4 +1,4 @@
-export type ProjectStatus = "completado" | "en-progreso" | "iniciando";
+export type ProjectStatus = "completado" | "en-progreso" | "archivado";
 
 export interface ProjectLink {
   label: string;
