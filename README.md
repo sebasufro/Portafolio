@@ -72,7 +72,7 @@ all derived from this array — nothing else to update.
 
 ```
 index.html              # page shell: header, hero, sections, footer
-public/                 # static assets (favicon, project screenshots)
+public/                 # static assets (favicon, CV.pdf, project screenshots)
 src/
   main.ts               # boots the app: sorts, renders, wires filters
   style.css             # design tokens + all styles

@@ -9,46 +9,37 @@ import type { Project } from "../types/project";
  */
 export const projects: Project[] = [
   {
-    id: "taskflow",
-    title: "TaskFlow",
+    id: "muebles",
+    title: "M.U - Muebles",
     description:
-      "A keyboard-first task manager with offline support, drag-and-drop boards and instant search across thousands of items.",
-    tags: ["TypeScript", "Vite", "IndexedDB", "PWA"],
-    status: "completed",
+      "Pagina principal para el negocio de muebles 'M.U - Muebles'.",
+    tags: ["Vue", "HTML", "PostgreSQL", "JavaScript"],
+    status: "completado",
+    links: [
+      { label: "Código Fuente", url: "https://github.com/Azulgamer303/m.u-muebles" },
+    ],
+  },
+  {
+    id: "genomica",
+    title: "Genomica Dashboard",
+    description:
+      "Un Dashboard de organización de insumos y productos químicos y bioquímicos realizado para el equipo de Genomica de Bioren de la Universidad de la Frontera.",
+    tags: ["Next.js", "HTML", "Firebase"],
+    status: "completado",
     featured: true,
     links: [
-      { label: "Live demo", url: "https://example.com/taskflow" },
-      { label: "Source", url: "https://github.com/your-username/taskflow" },
+      { label: "Código Fuente", url: "https://github.com/sebasufro/genomica" },
     ],
   },
   {
-    id: "weather-lens",
-    title: "Weather Lens",
+    id: "rutasegura",
+    title: "Ruta Segura",
     description:
-      "Forecast dashboard that merges several public APIs into a single, glanceable view with hourly charts and severe-alert notifications.",
-    tags: ["TypeScript", "REST API", "SVG", "CSS"],
-    status: "completed",
+      "Aplicación móvil para mejorar las guias de rutas y ayudar a mejorar la comunicación en servicios de voluntariado",
+    tags: ["Flutter", "Android", "Typescript", "PostgreSQL"],
+    status: "completado",
     links: [
-      { label: "Live demo", url: "https://example.com/weather-lens" },
-      { label: "Source", url: "https://github.com/your-username/weather-lens" },
+      { label: "Código Fuente", url: "https://github.com/sebasufro/RutaSegura" }
     ],
-  },
-  {
-    id: "devnotes",
-    title: "DevNotes",
-    description:
-      "Markdown notebook for developers with syntax highlighting, tags and full-text search — currently adding end-to-end sync.",
-    tags: ["TypeScript", "Markdown", "Web Workers"],
-    status: "in-progress",
-    links: [{ label: "Source", url: "https://github.com/your-username/devnotes" }],
-  },
-  {
-    id: "legacy-portfolio",
-    title: "First Portfolio",
-    description:
-      "The static HTML/CSS site I started with. Kept online to show where everything began.",
-    tags: ["HTML", "CSS"],
-    status: "archived",
-    links: [{ label: "Source", url: "https://github.com/your-username/first-portfolio" }],
   },
 ];
