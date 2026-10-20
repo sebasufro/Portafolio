@@ -96,5 +96,8 @@ The build is fully static (`npm run build` → `dist/`) and uses relative asset
 paths (`base: "./"`), so it works anywhere:
 
 - **Netlify / Vercel / Cloudflare Pages** — build command `npm run build`, output `dist`
-- **GitHub Pages** — publish the `dist/` folder with any Actions workflow
+- **GitHub Pages** — included: [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+  builds, tests and deploys `dist/` on every push to `main`/`develop`.
+  One-time setup: repo **Settings → Pages → Source: GitHub Actions**.
+  Site: `https://sebasufro.github.io/Portafolio/`
 - **Any static host** — upload the contents of `dist/`
