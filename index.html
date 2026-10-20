@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Your Name — selected projects built with TypeScript, Vite and modern web tech."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>Your Name — Portfolio</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to projects</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <!-- Replace with your initials or name -->
+        <a class="brand" href="#top">YN<span class="brand__dot">.</span></a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <p class="hero__eyebrow">Portfolio</p>
+        <!-- Replace "Your Name" with your name -->
+        <h1 class="hero__title">Hi, I'm <span>Your Name</span></h1>
+        <p class="hero__subtitle">
+          I build fast, accessible web experiences with TypeScript. Below is a
+          selection of projects I have designed and shipped — search them or
+          filter them by technology.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#projects">View projects</a>
+          <a class="button button--ghost" href="mailto:you@example.com">Get in touch</a>
+        </div>
+      </section>
+
+      <section id="projects" class="section container" aria-labelledby="projects-title">
+        <div class="section__header">
+          <h2 id="projects-title">Projects</h2>
+          <p class="section__lead">Every entry lives in <code>src/data/projects.ts</code>.</p>
+        </div>
+
+        <div class="project-toolbar">
+          <label class="search-field">
+            <span class="visually-hidden">Search projects</span>
+            <input
+              id="project-search"
+              type="search"
+              placeholder="Search projects…"
+              autocomplete="off"
+            />
+          </label>
+          <div id="tag-filters" class="tag-filters" role="group" aria-label="Filter projects by tag"></div>
+        </div>
+
+        <p id="project-count" class="project-count" aria-live="polite"></p>
+        <ul id="project-list" class="project-list"></ul>
+        <p id="no-projects" class="empty-state" hidden>No projects match your filters.</p>
+      </section>
+
+      <section id="about" class="section container" aria-labelledby="about-title">
+        <div class="section__header">
+          <h2 id="about-title">About</h2>
+        </div>
+        <p class="section__lead">
+          <!-- Write a couple of lines about yourself here -->
+          Front-end developer focused on typed, maintainable code and clean
+          interfaces. I care about performance, accessibility and details that
+          make products pleasant to use.
+        </p>
+      </section>
+
+      <section id="contact" class="section container" aria-labelledby="contact-title">
+        <div class="section__header">
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <p class="section__lead">
+          Want to work together? Reach me at
+          <a href="mailto:you@example.com">you@example.com</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="year">2026</span> Your Name · Built with Vite + TypeScript</p>
+        <nav class="footer-nav" aria-label="Social">
+          <a href="https://github.com/your-username" rel="me noopener noreferrer" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-username" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
